@@ -15,7 +15,7 @@ alias gitdel="python3 ~/Projects/helpers/git.py del"
 alias clone="python3 ~/Projects/helpers/git_clone.py"
 
 #shell
-alias new="~/Projects/Linux/sh new.sh"
+alias new="sh ~/Projects/Linux/new.sh"
 
 #python
 alias modules="python3 ~/Projects/helpers/install_modules.py"
