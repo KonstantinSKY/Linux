@@ -1,0 +1,30 @@
+#my aliases
+alias ali="nano ~/my_aliases"
+
+#paths
+alias prjs="cd ~/Projects"
+alias mw="cd ~/mywork/"
+#alias skyman="cd ~/Projects/skyman"
+#alias jup="jupyter notebook"
+#alias pg="cd ~/Projects/playground"
+#alias sb="cd ~/Projects/skybot"
+
+# git
+alias commit="python3 ~/Projects/helpers/git.py"
+alias gitdel="python3 ~/Projects/helpers/git.py del"
+alias clone="python3 ~/Projects/helpers/git_clone.py"
+
+#shell
+alias new="~/Projects/Linux/sh new.sh"
+
+#python
+alias modules="python3 ~/Projects/helpers/install_modules.py"
+#alias jup="jupyter notebook"
+
+#alias runserv="python3 manage.py runserver"
+
+# venv
+alias activate="source venv/bin/activate"
+
+
+#end my aliases
