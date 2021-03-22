@@ -1,6 +1,9 @@
 #my aliases
 alias ali="nvim ~/my_aliases"
 
+#ssh
+alias sshm="ssh $(<~/Projects/Settings/sshm_addr)"
+
 #paths
 alias prjs="cd ~/Projects"
 alias lnx="cd ~/Projects/Linux"
