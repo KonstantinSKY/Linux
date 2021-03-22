@@ -1,0 +1,38 @@
+#my aliases
+alias ali="nvim ~/my_aliases"
+
+#nvim
+alias v="nvim $1"
+alias v_conf="nvim ~/.config/nvim/init.vim"
+
+#ssh
+alias sshm="ssh $(<~/Projects/Settings/sshm_addr)"
+
+#paths
+alias prjs="cd ~/Projects"
+alias lnx="cd ~/Projects/Linux"
+#alias jup="jupyter notebook"
+#alias pg="cd ~/Projects/playground"
+#alias sb="cd ~/Projects/skybot"
+
+# git
+alias commit="python3 ~/Projects/helpers/git.py"
+alias gitdel="python3 ~/Projects/helpers/git.py del"
+alias clone="python3 ~/Projects/helpers/git_clone.py"
+alias pull="git pull"
+
+#shell
+alias new="sh ~/Projects/Linux/new.sh"
+alias upd="sh ~/Projects/Manjaro/update.sh"
+
+#python
+alias modules="python3 ~/Projects/helpers/install_modules.py"
+#alias jup="jupyter notebook"
+
+#alias runserv="python3 manage.py runserver"
+
+# venv
+alias activate="source venv/bin/activate"
+
+
+#end my aliases
