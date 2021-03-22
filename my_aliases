@@ -1,10 +1,9 @@
 #my aliases
-alias ali="nano ~/my_aliases"
+alias ali="nvim ~/my_aliases"
 
 #paths
 alias prjs="cd ~/Projects"
-alias mw="cd ~/mywork/"
-#alias skyman="cd ~/Projects/skyman"
+alias lnx="cd ~/Projects/Linux"
 #alias jup="jupyter notebook"
 #alias pg="cd ~/Projects/playground"
 #alias sb="cd ~/Projects/skybot"
