@@ -10,10 +10,3 @@ nvim $file_name
 
 #TODO add filename in $1
 #TODO add for checking if file exist
-
-
-
-
-
-
-
