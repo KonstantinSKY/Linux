@@ -15,6 +15,11 @@ alias lnx="cd ~/Projects/Linux"
 #alias pg="cd ~/Projects/playground"
 #alias sb="cd ~/Projects/skybot"
 
+#Virtual Machine 
+alias startvmm='VBoxManage startvm "Manjaro_VM" --type headless'
+alias stopvmm='VBoxManage controlvm "Manjaro_VM" acpipowerbutton'
+
+
 # git
 alias commit="python3 ~/Projects/helpers/git.py"
 alias gitdel="python3 ~/Projects/helpers/git.py del"
