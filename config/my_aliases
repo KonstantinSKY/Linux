@@ -29,7 +29,7 @@ alias pull="git pull"
 #shell
 alias new="sh ~/Projects/Linux/new.sh"
 alias upd="sh ~/Projects/Manjaro/update.sh"
-
+alias h="history"
 #python
 alias modules="python3 ~/Projects/helpers/install_modules.py"
 #alias jup="jupyter notebook"
