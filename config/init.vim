@@ -1,6 +1,8 @@
 set number
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set hlsearch incsearch
+set encoding=UTF-8
+
 "Auto indent
 set autoindent
 syntax on
@@ -19,14 +21,17 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'morhetz/gruvbox'
 Plug 'kien/ctrlp.vim'
+Plug 'ryanoasis/vim-devicons'
+
 
 "Initialize plugin system
 call plug#end()
 
 "Color set
 colorscheme gruvbox
-background=dark
-
+set background=dark
+"GitGutter Delay
+set updatetime=100
 "Mapping
 map <C-n> :NERDTreeToggle<CR>
 map <C-l> :noh<CR>
