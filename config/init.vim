@@ -41,6 +41,8 @@ let g:Powerline_symbols='unicode' "Поддержка unicode
 let g:airline#extensions#xkblayout#enabled = 0 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+"Events for create files
+au bufnewfile *.sh 0r ~/.templates/sh_header.templ
 "Mapping
 map <C-n> :NERDTreeToggle<CR>
 map <C-l> :noh<CR>
