@@ -9,10 +9,9 @@ INIT_VIM=$CONF_DIR/init.vim
 echo My aliases on ...
 ln -sf $CONF_DIR/my_aliases ~/my_aliases 
 ls -la ~/my_aliases
-echo Add sourse to .bashrc
-grep '. ~/my_aliases' ~/.bashrc >/dev/null && echo ". ~/my_aliases" >> ~/.bashrc
 
-#[[$(grep -c '. ~/my_aliases' ~/.bashrc) == 0]] && echo ". ~/my_aliases" >> ~/.bashrc
+echo Add sourse to .bashrc
+[[ $(grep -c '. ~/my_aliases' ~/.bashrc) == 0 ]] && echo ". ~/my_aliases" >> ~/.bashrc
 tail -3 ~/.bashrc
 
 echo init.vim on ...
@@ -23,6 +22,6 @@ ln -sf $INIT_VIM ~/.vimrc
 ls -la ~/.vimrc
 
 echo Creating simlinks for templates...
-mkdir -p ~/.templates
+[[ ! -d ~/.templates ]] && mkdir ~/.templates
 ln -sf $TEMPL_DIR/sh_header.templ ~/.templates
 ls -la ~/.templates
