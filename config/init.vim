@@ -48,3 +48,4 @@ au bufnewfile *.sh 0r ~/.templates/sh_header.templ
 "Mapping
 map <C-n> :NERDTreeToggle<CR>
 map <C-l> :noh<CR>
+map <C-x> :!chmod u+x %<CR>
