@@ -14,6 +14,7 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
+Plug 'ycm-core/YouCompleteMe'
 call plug#end()
                 
 "SETS
