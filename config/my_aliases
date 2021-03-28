@@ -27,7 +27,7 @@ alias clone="python3 ~/Projects/helpers/git_clone.py"
 alias pull="git pull"
 
 #shell
-alias new="sh ~/Projects/Linux/new.sh"
+alias new="sh ~/Projects/Linux/new.sh $1"
 alias upd="sh ~/Projects/Manjaro/update.sh"
 alias h="history"
 #python
