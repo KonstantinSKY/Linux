@@ -14,9 +14,10 @@ Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
                 
+
 "SETS
 set nu                                  "line numbers
 set encoding=UTF-8

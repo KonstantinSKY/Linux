@@ -1,8 +1,13 @@
 #!/bin/bash
 
 # Creating  new executing bash file...
-echo Enter new file name:
-read file_name
+
+if [$1] 
+then
+    file_name=$1
+else
+    echo Enter new file name:
+    read file_name
 
 echo '#!/bin/bash' > $file_name
 chmod u+x $file_name
