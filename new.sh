@@ -15,7 +15,7 @@ echo "Trying to create $file_name ..."
 [[ -e $file_name ]] && echo The file or directory is exist && exit
 
 [[ -f ~/.templates/sh_header.templ ]] && cat ~/.templates/sh_header.templ > $file_name
-echo continuin:wq
+#echo continuin:wq
 #[[ -f ~/.templates/sh_header.templ ]] && echo GOOD
 #echo not GOOD
 

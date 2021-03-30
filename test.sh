@@ -1,1 +1,2 @@
-grep '. ~/my_aliases' ~/.bashrc >/dev/null && echo YES 
+str_line='#%.0s' {1..100}
+echo $str_line 

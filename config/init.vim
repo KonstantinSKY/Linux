@@ -12,8 +12,9 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
-Plug '907th/vim-auto-save'
+"Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
+Plug 'preservim/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
                 
@@ -52,6 +53,8 @@ let g:Powerline_symbols ='unicode' 			"unicode
 let g:airline#extensions#xkblayout#enabled = 0 
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+"for NerdCommenter
+
 " Python
 let python_highlight_all = 1
 syntax on
@@ -66,6 +69,8 @@ map <F2> :IndentLinesToggle<CR>
 map <F3> :NERDTreeToggle<CR> 
 "  Enable folding with the spacebar
 nnoremap <space> za			" Enable folding with the spacebar
+nnoremap <C-/> <Leader>c<space>
+
 
 
 " Templates
