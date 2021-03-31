@@ -12,7 +12,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'vim-scripts/indentpython.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
-"Plug '907th/vim-auto-save'
+Plug '907th/vim-auto-save'
 Plug 'Yggdroot/indentLine'
 Plug 'preservim/nerdcommenter'
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
@@ -60,7 +60,7 @@ let python_highlight_all = 1
 syntax on
 " Auto-Save
 let g:auto_save = 1 
-let g:auto_save_silent = 1		"1: Don't show autosave notification
+let g:auto_save_silent = 0		"1: Don't show autosave notification
 let g:auto_save_events = ["InsertLeave"] "When to save event
 let g:indentLine_enabled = 1
 "MAPS
