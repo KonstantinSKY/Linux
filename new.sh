@@ -20,6 +20,16 @@ echo "Trying to create $file_name ..."
 #echo not GOOD
 
 #echo '#!/bin/bash' > $file_name
+ #printf '# Scrpt name : %s%40s Date :%s%40s\n' "nadf:e" "MM/DD/YY" '#'
+  3 #printf '# Script name : %s%40s%s%20s#\n' "nadcdfddf:e" "Date : MM/DDsfdsf/YY"                     
+format='# %-11s : %-32s %-6s : %-21s#\n'
+format2='# %-11s : %-63s#\n'
+printf '#\e[79b\n'
+printf "$format" "Script name" "var_name"  "Date" "M/DDsfdsf/YY"
+printf "$format" "Author" "Stan SKY" "E-mail" "sky012877@gmail.com"
+printf "$format2" "Description" ""
+printf '#\e[79b\n'
+
 chmod u+x $file_name
 nvim $file_name
 
