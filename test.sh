@@ -13,7 +13,9 @@ echo $str1 >> file
 echo  "Name : $0" 
 echo  "Base Name : $(basename $0)" 
 #printf '#\e[79b\n\n' >> file
+echo $(date +%F)
 
+echo $(date +%m/%d/%Y)
 
 #str1="$format" "Script name" "var_name"  "Date" "M/DDsfdsf/YY" 
 #printf $str1
