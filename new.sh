@@ -23,7 +23,7 @@ format='# %-11s : %-32s %-6s : %-21s#\n'
 format2='# %-11s : %-63s#\n'
 
 echo $str1 > $file_name
-printf "$format" "Script name" $file_name "Date" "M/DDsfdsf/YY" >> $file_name
+printf "$format" "Script name" $file_name "Date" $(date +%m/%d/%Y) >> $file_name
 printf "$format" "Author" "Stan SKY" "E-mail" "sky012877@gmail.com" >> $file_name  
 printf "$format2" "Description" "" >> $file_name
 echo $str1 >> $file_name                                                                                  
