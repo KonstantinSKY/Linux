@@ -1,6 +1,8 @@
 #!/bin/bash
 
 # Creating  new executing bash file...
+# TODO Descriptions!!!!
+# TODO Up name & email
 
 if [ $1 ] 
 then
