@@ -10,7 +10,8 @@ printf "$format" "Author" "Stan SKY" "E-mail" "sky012877@gmail.com" >> file
 printf "$format2" "Description" "" >> file
 echo $str1 >> file
 
-
+echo  "Name : $0" 
+echo  "Base Name : $(basename $0)" 
 #printf '#\e[79b\n\n' >> file
 
 
