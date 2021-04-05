@@ -6,20 +6,25 @@
 
 DEFAULT_USER="sky"
 
-echo Creating new postgres user... 
+echo 'Creating new postgres ROLE (user)...'
+sudo -i -u postgres psql -c '\du'
 
 if [ $1 ] 
 then
     USER=$1
 else
     echo "You did't add user name as argument..."
-    echo "Enter new file name, default user is $DEFAULT_USER :"
+    echo "Enter new user name, default user is $DEFAULT_USER :"
     read USER 
 fi
 [[ ! $USER ]] && USER=$DEFAULT_USER
 
 echo "Trying to create user: $USER" 
 
-sudo createuser --interactive $USER
+echo "Enter password:"
+read PASSWD
+
+sudo -i -u postgres psql -c "CREATE ROLE $USER WITH LOGIN PASSWORD '$PASSWD'"
+
 
 
