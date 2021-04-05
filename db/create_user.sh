@@ -26,7 +26,7 @@ read PASSWD
 sudo -i -u postgres psql -c "CREATE ROLE $USER WITH LOGIN PASSWORD '$PASSWD'"
 sudo -i -u postgres psql -c '\du'
 
-echo "Checking your db from new user: $USER"
+echo "Checking databases from new user: $USER"
 psql postgres -c '\l'
 
 echo Done!
