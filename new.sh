@@ -17,13 +17,16 @@ fi
 
 echo "Trying to create $file_name ..."
 [[ ! $file_name ]] && echo No file name && exit
-[[ -e $file_name ]] && echo The file or directory is exist && exit
-
-shift
+[[ -d $file_name ]] && echo "$file_name" is exist as directory && exit
+if [ -f $file_name ]
+then
+    echo "$file_name is exist, rename to $file_name.old"   
+    mv $file_name  "$file_name.old" 
+fi
 
 if [ $2 ] 
 then
-    #shift
+    shift
     descr="$*"
     echo "Description is $descr"
 else
@@ -45,7 +48,8 @@ printf "$format" "Script name" "$file_name" "Date" $(date +%m/%d/%Y) >> $file_na
 printf "$format" "Author" "$author" "E-mail" "$email" >> $file_name  
 printf "$format2" "Description" "$descr" >> $file_name
 echo $str1 >> $file_name                                                                                  
-[[ -f $file_name ]] && chmod u+x $file_name && nvim $file_name
 
-#TODO add filename in $1
-#TODO add for checking if file exist
+[[ -f $file_name ]] && chmod u+x $file_name
+
+[[ -f "$file_name.old" ]] && chmod u-x "$file_name.old" && cat "$file_name.old" >> $file_name && rm "$file_name.old"
+nvim $file_name
