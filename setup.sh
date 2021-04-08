@@ -1,4 +1,8 @@
-#!/bin/bash
+################################################################################
+# Script name : setup.sh                         Date   : 04/08/2021           #
+# Author      : Stan SKY                         E-mail : sky012877@gmail.com  #
+# Description : Settings for all linux distr                                   #
+################################################################################
 
 echo Base Linux settings
 START_DIR=$(dirname $(realpath "&0"))

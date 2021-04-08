@@ -7,6 +7,8 @@ echo Creating  new executing file...
 echo 'You also can add filename and descrption in first and second argument...' 
 echo Or interactive now...
 
+[[ $1 == '-s' ]] && shabang=true && shift
+
 if [ $1 ] 
 then
     file_name=$1
