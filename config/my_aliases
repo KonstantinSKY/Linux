@@ -3,7 +3,7 @@ alias ali="nvim ~/my_aliases"
 
 #nvim
 alias v="nvim $1"
-alias p="pyhon $1"
+alias p="python $1"
 
 alias v_conf="nvim ~/.config/nvim/init.vim"
 
